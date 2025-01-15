@@ -1,9 +1,52 @@
-#book_form {
+.book_form {
     display: grid;
     grid-template-columns: 1fr 2fr;
     text-align: left;
     gap: 10px;
     width: 100%;
     max-width: 300px;
+    border: 1px solid green;
+}
+
+#add_book {
+    width: 100%;
+    max-width: 200px;
+    margin: 10px 0;
+    border: 0;
+}
+
+.form_title {
+    font-size: 1.5em;
+    text-align: center;
+    grid-column: span 2;
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+    text-align: left;
+}
+
+.book_div p {
+    font-style: italic;
+    padding: 0;
+    margin: 0;
+}
+
+.book_div p::before {
+    content: "--";
+    margin-right: 5px;
+}
+
+.book_div p::after {
+    content: '--';
+    margin-left: 5px;
 }

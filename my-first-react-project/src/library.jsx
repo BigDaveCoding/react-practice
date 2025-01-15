@@ -1,7 +1,9 @@
+import React, { useState } from 'react';
 import './library.css'
 
-export const My_books = []
-
+export const My_books = [
+    new CreateBook('The Hobbit', 'J.R.R. Tolkien', 295, true),
+];
 
 export function CreateBook(title, author, pages, read){
     this.title = title
@@ -14,12 +16,12 @@ export function CreateBook(title, author, pages, read){
     }
 }
 
-export function AddToLibrary(book_obj, library){
-    library.push(book_obj)
-    return library
-}
+// export function AddToLibrary(book_obj, library){
+//     library.push(book_obj)
+//     return library
+// }
 
-export function BookForm(){
+export function BookForm({ setBooks }){
 
     const handleAddBook = (e) => {
         e.preventDefault()
@@ -32,21 +34,29 @@ export function BookForm(){
             let pages = document.getElementById('book_pages').value
             let read = document.getElementById('book_read').checked
 
-            let new_book = new CreateBook(title, author, pages, read)
-            AddToLibrary(new_book, My_books)
-            console.log(My_books)
+            const new_book = new CreateBook(title, author, pages, read)
+            // AddToLibrary(new_book, My_books)
+            // console.log(My_books)
+
+            setBooks((prev_books) => [...prev_books, new_book])
 
             // Reset the input fields
             document.getElementById('book_title').value = ''
             document.getElementById('book_author').value = ''
             document.getElementById('book_pages').value = ''
             document.getElementById('book_read').checked = false
+            // document.getElementsByClassName('.book_form').reset()
+            document.querySelector('.book_form').classList.add('hidden');
         }
     }
 
     return (
         <>
-            <form id="book_form">
+            
+            <form className="book_form hidden">
+
+                <h2 className="form_title">Add a Book</h2>
+
                 <label htmlFor="book_title">Title</label>
                 <input placeholder="book title" type="text" id="book_title"/>
 
@@ -68,13 +78,25 @@ export function BookForm(){
 }
 
 export function DisplayBooks(){
+
+    const [books, setBooks] = useState(My_books)
+
     return (
         <>
-            {My_books.map((book, i) => (
-                <div key={`book_${i}`}>
-                    {book.bookInfo()}
-                </div>
-            ))}
+            <div className="container">
+                <h2>My Books</h2>
+                
+                {books.map((book, i) => (
+                    <div className="book_div" key={`book_${i}`}>
+                        {book.bookInfo()}
+                    </div>
+                ))}
+
+                <button id="add_book" onClick={() => document.querySelector('.book_form').classList.toggle('hidden')}>Add Book</button>
+
+                <BookForm setBooks={setBooks} />
+                
+            </div>
         </>
     )
 }
