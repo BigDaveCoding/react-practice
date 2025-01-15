@@ -1,5 +1,7 @@
 import './library.css'
 
+export const My_books = []
+
 
 export function CreateBook(title, author, pages, read){
     this.title = title
@@ -22,7 +24,8 @@ export function BookForm(){
     const handleAddBook = (e) => {
         e.preventDefault()
         if (document.getElementById('book_title').value === '' || document.getElementById('book_author').value === '' || document.getElementById('book_pages').value === ''){
-            alert('Please fill in all fields')
+            console.log('All fields must be filled')
+            return
         } else {
             let title = document.getElementById('book_title').value
             let author = document.getElementById('book_author').value
@@ -30,7 +33,8 @@ export function BookForm(){
             let read = document.getElementById('book_read').checked
 
             let new_book = new CreateBook(title, author, pages, read)
-            console.log(new_book)
+            AddToLibrary(new_book, My_books)
+            console.log(My_books)
 
             // Reset the input fields
             document.getElementById('book_title').value = ''
@@ -63,4 +67,14 @@ export function BookForm(){
     )
 }
 
-
+export function DisplayBooks(){
+    return (
+        <>
+            {My_books.map((book, i) => (
+                <div key={`book_${i}`}>
+                    {book.bookInfo()}
+                </div>
+            ))}
+        </>
+    )
+}
