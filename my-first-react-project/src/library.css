@@ -1,0 +1,9 @@
+#book_form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    text-align: left;
+    gap: 10px;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
