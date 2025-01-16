@@ -12,6 +12,33 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+* {
+  margin: 0;
+}
+
+.header_grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.header_grid_item {
+  padding: 1rem;
+}
+
+nav ul { 
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.date_time {
+  text-align: left;
+  
+}
+
 /* 
 a {
   font-weight: 500;
