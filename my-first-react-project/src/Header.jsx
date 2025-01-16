@@ -31,7 +31,7 @@ function Header() {
         updateDateTime();
         const interval = setInterval(updateDateTime, 60000);
         return () => clearInterval(interval);
-    });
+    }, []);
     
 
     return (
