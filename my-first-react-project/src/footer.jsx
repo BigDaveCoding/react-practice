@@ -7,11 +7,9 @@ function Footer() {
 
     useEffect(() => {
         if (footerRef.current) {
-            console.log(footerRef.current);
-
             gsap.to(footerRef.current, {
-                opacity: 1,
-                duration: 2,
+                opacity: 0.8,
+                duration: 1,
                 ease: 'power3.out',
             });
         }
@@ -19,7 +17,7 @@ function Footer() {
 
     return (
         <>
-            <footer>
+            <footer ref={footerRef}>
                 <hr />
                 <div className="footer_copyright">
                     <a href="#"><i className="fas fa-copyright"></i></a>

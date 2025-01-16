@@ -108,8 +108,9 @@ footer {
   height: 10vh;
   display: flex;
   flex-direction: column;
-  opacity: 0.8;
+  opacity: 0; /* Init to 0, GSAP animation is changing to x */ 
   font-size: var(--header_small_font_size);
+
 }
 
 footer p:first-of-type {
