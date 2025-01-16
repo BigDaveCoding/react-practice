@@ -1,5 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
+// import 'font-awesome/css/font-awesome.min.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function Header() {
 
@@ -53,8 +55,14 @@ function Header() {
         <header ref={headerRef}>
             <div className="header_grid">
                 <div className="date_time header_grid_item">
-                    <p>{dateTime.date}</p>
-                    <p>{dateTime.time}</p>
+                    <div>
+                        <i className="fas fa-calendar"></i>
+                        <p>{dateTime.date}</p>
+                    </div>
+                    <div>
+                        <i className="fas fa-clock"></i>
+                        <p>{dateTime.time}</p>
+                    </div>
                 </div>
                 <div className="page_title header_grid_item">
                     <h1>{name.toUpperCase()}</h1>
