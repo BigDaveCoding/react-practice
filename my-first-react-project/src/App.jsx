@@ -1,14 +1,15 @@
 import { useState } from 'react'
 import './App.css'
-import { DisplayBooks } from './library.jsx'
 import Header from './Header.jsx'
 import Footer from './footer.jsx'
+import HeroSection from './hero.jsx'
 
 function App() {
 
   return (
     <>
       <Header />
+      <HeroSection />
       <Footer />
     </>
   )
