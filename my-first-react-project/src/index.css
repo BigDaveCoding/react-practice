@@ -25,6 +25,7 @@ header {
   position: fixed;
   width: 100%;
   max-width: 1280px;
+  opacity: 0; /* Hide Header Initially. GSAP Animation Fades Opacity In */
 }
 
 .header_grid {
@@ -37,6 +38,10 @@ header {
 
 .page_title {
   letter-spacing: 0.3rem;
+}
+
+.page_title h1 {
+  margin: 0;
 }
 
 .page_title p {

@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
 
 function Header() {
 
@@ -11,6 +12,8 @@ function Header() {
             time: '',
         }
     );
+
+    const headerRef = useRef(null);
 
     const updateDateTime = () => {
 
@@ -32,10 +35,22 @@ function Header() {
         const interval = setInterval(updateDateTime, 60000);
         return () => clearInterval(interval);
     }, []);
+
+    useEffect(() => {
+
+        if (headerRef.current) {
+            // console.log(headerRef.current);
+            gsap.to(headerRef.current, {
+                opacity: 1,
+                duration: 1,
+                ease: 'power3.out',
+            });
+        }  
+    }, []);
     
 
     return (
-        <header>
+        <header ref={headerRef}>
             <div className="header_grid">
                 <div className="date_time header_grid_item">
                     <p>{dateTime.date}</p>
