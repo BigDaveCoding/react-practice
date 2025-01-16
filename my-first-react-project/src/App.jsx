@@ -31,7 +31,7 @@ function App() {
         </p>
       </div> */}
       <Header />
-      <DisplayBooks />
+      {/* <DisplayBooks /> */}
 
     </>
   )

@@ -1,21 +1,45 @@
+import { useState, useEffect } from 'react';
 
 function Header() {
 
     const name = 'David Smith'
-    const role = 'Software Engineer'
-    const date = new Date().getUTCDate() + '/' + new Date().getUTCMonth() + '/' + new Date().getUTCFullYear()
-    const now = new Date();
-    const hours = now.getUTCHours().toString().padStart(2, '0');
-    const minutes = now.getMinutes().toString().padStart(2, '0');
-    const time = `${hours}:${minutes}`;
+    const role = 'Software Developer'
+
+    const [dateTime, setDateTime] = useState(
+        {
+            date: '',
+            time: '',
+        }
+    );
+
+    const updateDateTime = () => {
+
+        const now = new Date();
+        const day = now.getUTCDate().toString().padStart(2, '0');
+        const month = (now.getUTCMonth() + 1).toString().padStart(2, '0');
+        const year = now.getUTCFullYear();
+        const hours = now.getUTCHours().toString().padStart(2, '0');
+        const minutes = now.getMinutes().toString().padStart(2, '0');
+
+        setDateTime({
+            date: `${day}/${month}/${year}`,
+            time: `${hours}:${minutes}`,
+        });
+    };
+
+    useEffect(() => {
+        updateDateTime();
+        const interval = setInterval(updateDateTime, 60000);
+        return () => clearInterval(interval);
+    });
     
 
     return (
         <header>
             <div className="header_grid">
                 <div className="date_time header_grid_item">
-                    <p>{date}</p>
-                    <p>{time}</p>
+                    <p>{dateTime.date}</p>
+                    <p>{dateTime.time}</p>
                 </div>
                 <div className="page_title header_grid_item">
                     <h1>{name.toUpperCase()}</h1>
@@ -30,6 +54,7 @@ function Header() {
                     </ul>
                 </nav>
             </div>
+            <hr />
         </header>
     )
 }
