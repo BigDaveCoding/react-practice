@@ -32,6 +32,7 @@ header {
   height: 8vh;
   opacity: 0; /* Hide Header Initially. GSAP Animation Fades Opacity In */
   margin: 1vh 0 1vh 0;
+  z-index: 1000;
 }
 
 .header_grid {
@@ -197,60 +198,76 @@ footer i {
 
 .hero_description {
   text-align: left;
+  font-size: 1.2rem;
   /* padding-top: 6rem; */
 }
 
-/* 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+.services_section {
+  /* color: white;
+  background-color: rgb(8, 8, 7, 0.9); */
+  border-radius: 50px 50px 0 0;
 }
 
-body {
-  margin: 0;
+.services_title {
+  font-size: 4rem;
+}
+
+.services_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2rem 0;
+  margin-bottom: 1rem;
+}
+
+.s_grid_item {
+  border-top: 0.5px solid black;
+  /* margin: 1rem; */
+  padding: 1rem;
+}
+
+.s_grid_intro {
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  gap: 3rem;
+  text-align: left;
+  font-size: 1.2rem;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.s_grid_intro p:last-of-type {
+  padding-right: 7rem;
+  
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.s_grid_column_one {
+  text-align: left;
+  font-size: 2rem;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
+.service {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.service p {
+  padding: 1rem 7rem 1rem 0;
+}
+
+.service h4 {
+  font-size: 2rem;
+}
+
+.service ul {
+  list-style: none;
+  padding: 0;
+}
+
+.service_list_key {
+  padding-right: 1rem;
+}
+
+.service ul li {
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 0.5rem 0 0.5rem 0;
+  border-bottom: 1px solid black;
+}

@@ -3,6 +3,7 @@ import './App.css'
 import Header from './Header.jsx'
 import Footer from './footer.jsx'
 import HeroSection from './hero.jsx'
+import Services from './services.jsx'
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
     <>
       <Header />
       <HeroSection />
+      <Services />
       <Footer />
     </>
   )

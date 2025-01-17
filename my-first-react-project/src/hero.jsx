@@ -34,7 +34,7 @@ function HeroSection() {
             // Deleting animation (from the end)
             tl.to(autoTypeRef.current, {
                 text: '',
-                duration: word.length * typeSpeed,
+                duration: word.length * (typeSpeed / 2),
                 ease: 'none',
             });
         });
