@@ -18,6 +18,8 @@ function Services() {
     const seo_text = "Drive traffic and boost visibility with websites optimized for search engines.\
                          I ensure your site is fast, accessible, and structured to rank higher, helping your audience find you effortlessly."
 
+
+    const introSection = useRef(null)
     const webDevSection = useRef(null)
     const webDesignSection = useRef(null)
     const seoSection = useRef(null)
@@ -70,18 +72,98 @@ function Services() {
             ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
         };
     }, []);
+
+    useEffect(() => {
+        const intro = introSection.current;
+        const webDev = webDevSection.current;
+        const webDesign = webDesignSection.current;
+        const seo = seoSection.current;
+
+        if(intro) {
+            gsap.fromTo(intro, {
+                opacity: 0,
+            }, {
+                opacity: 1,
+                duration: 2,
+                scrollTrigger: {
+                    trigger: intro,
+                    start: 'top 70%',
+                    end: 'bottom 50%',
+                    // markers: true,
+                }
+            })
+        }
+
+
+        if (webDev) {
+            gsap.fromTo(webDev, {
+                opacity: 0,
+                x: -500,
+            }, {
+                opacity: 1,
+                x: 0,
+                duration: 1,
+
+                scrollTrigger: {
+                    trigger: webDev,
+                    start: 'top 60%',
+                    end: 'bottom 50%',
+                }
+            })
+        }
+
+        if (webDesign) {
+            gsap.fromTo(webDesign, {
+                opacity: 0,
+                x: 500,
+            }, {
+                opacity: 1,
+                x: 0,
+                duration: 1,
+                scrollTrigger: {
+                    trigger: webDesign,
+                    start: 'top 75%',
+                    end: 'bottom 50%',
+                }
+            })
+        }
+
+        if (seo) {
+            gsap.fromTo(seo, {
+                opacity: 0,
+                x: -500,
+            }, {
+                opacity: 1,
+                x: 0,
+                duration: 1,
+                scrollTrigger: {
+                    trigger: seo,
+                    start: 'top 75%',
+                    end: 'bottom 50%',
+                }
+            })
+        }
+
+
+        return () => {
+            ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+        };
+
+    }, []);
     
 
 
     return (
         <>
             <section className="services_section">
-                <h3 className="services_title">HOW I CAN HELP YOU</h3>
-                <div className="services_grid">
-                    <span></span>
-                    <div className="s_grid_intro">
-                        <p><strong>(SERVICES)</strong></p>
-                        <p>{intro}</p>
+                <div ref={introSection}>
+                    <h3 className="services_title">HOW I CAN HELP YOU</h3>
+                    <div className="services_grid">
+                        <span></span>
+                        <div className="s_grid_intro">
+                            <p><strong>(SERVICES)</strong></p>
+                            <p>{intro}</p>
+                        </div>
                     </div>
                 </div>
 
