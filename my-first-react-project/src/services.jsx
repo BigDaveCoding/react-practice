@@ -19,7 +19,58 @@ function Services() {
                          I ensure your site is fast, accessible, and structured to rank higher, helping your audience find you effortlessly."
 
     const webDevSection = useRef(null)
-    // console.log(web_dev_section)
+    const webDesignSection = useRef(null)
+    const seoSection = useRef(null)
+
+    useEffect(() => {
+        const webDev = webDevSection.current;
+        const webDesign = webDesignSection.current;
+        const seo = seoSection.current;
+
+    
+        if (webDev && webDesign && seo) {
+            gsap.to(webDev, {
+                scrollTrigger: {
+                    trigger: webDev,
+                    start: 'top 10%', // Pin starts when the top of the element reaches the top of the viewport
+                    endTrigger: seo,
+                    end: 'top 25%', 
+                    pin: true,
+                    pinSpacing: false,
+                    // markers: true,
+                }
+            });
+
+            gsap.to(webDesign, {
+                scrollTrigger: {
+                    trigger: webDesign,
+                    start: 'top 17.5%',
+                    endTrigger: seo,
+                    end: 'top 25%',
+                    pin: true,
+                    pinSpacing: false,
+                    // markers: true,
+                }
+            });
+
+            gsap.to(seo, {
+                scrollTrigger: {
+                    trigger: seo,
+                    start: 'top 25%',
+                    end: 'top 25%',
+                    pin: true,
+                    pinSpacing: false,
+                    // markers: true,
+                }
+            });
+        }
+    
+        // Cleanup ScrollTrigger on component unmount
+        return () => {
+            ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+        };
+    }, []);
+    
 
 
     return (
@@ -47,7 +98,7 @@ function Services() {
                     </div>
                 </div>
 
-                <div className="services_grid s_grid_item">
+                <div ref={webDesignSection} className="services_grid s_grid_item">
                     <span className="s_grid_column_one">(02)</span>
                     <div className = "service">
                         <h4>Web Design</h4>
@@ -60,7 +111,7 @@ function Services() {
                     </div>
                 </div>
 
-                <div className="services_grid s_grid_item">
+                <div ref={seoSection} className="services_grid s_grid_item">
                     <span className="s_grid_column_one">(03)</span>
                     <div className = "service">
                         <h4>SEO</h4>

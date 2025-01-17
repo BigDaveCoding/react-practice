@@ -16,6 +16,7 @@
   --a-link-hover-color: #0b610c;
   --header_small_font_size: 0.8rem;
   --max-width-px: 1280px;
+  --background-color: white;
 }
 
 * {
@@ -206,7 +207,8 @@ footer i {
   /* color: white;
   background-color: rgb(8, 8, 7, 0.9); */
   border-radius: 50px 50px 0 0;
-  height: auto;
+  position: relative;
+  padding-bottom: 10px;
 }
 
 .services_title {
@@ -224,6 +226,7 @@ footer i {
   border-top: 0.5px solid black;
   /* margin: 1rem; */
   padding: 1rem;
+  background-color: var(--background-color);
 }
 
 .s_grid_intro {
