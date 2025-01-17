@@ -7,6 +7,13 @@ function Services() {
                             I create custom websites that not only reflect your unique vision but also offer intuitive, engaging experiences.\
                             By incorporating smooth animations and attention to detail, I ensure your audience stays captivated and returns for more."
 
+    const web_design_text = "Enhance your digital presence with a website that resonates with your audience.\
+                             I create visually captivating, user-focused designs that not only reflect your brand but also drive engagement,\
+                              helping you achieve your business goals and grow effortlessly."
+
+    const seo_text = "Drive traffic and boost visibility with websites optimized for search engines.\
+                         I ensure your site is fast, accessible, and structured to rank higher, helping your audience find you effortlessly."
+
 
 
     return (
@@ -38,11 +45,24 @@ function Services() {
                     <span className="s_grid_column_one">(02)</span>
                     <div className = "service">
                         <h4>Web Design</h4>
-                        <p>{web_dev_text}</p>
+                        <p>{web_design_text}</p>
                         <ul>
                             <li><span className="service_list_key"><sup>01</sup></span>Responsive Design</li>
                             <li><span className="service_list_key"><sup>02</sup></span>Wireframing</li>
                             <li><span className="service_list_key"><sup>03</sup></span>UI/UX Design</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div className="services_grid s_grid_item">
+                    <span className="s_grid_column_one">(03)</span>
+                    <div className = "service">
+                        <h4>SEO</h4>
+                        <p>{seo_text}</p>
+                        <ul>
+                            <li><span className="service_list_key"><sup>01</sup></span>On-Page SEO</li>
+                            <li><span className="service_list_key"><sup>02</sup></span>Analytics & reporting</li>
+                            <li><span className="service_list_key"><sup>03</sup></span>Content Optimization</li>
                         </ul>
                     </div>
                 </div>
