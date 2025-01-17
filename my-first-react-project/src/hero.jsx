@@ -7,12 +7,15 @@ gsap.registerPlugin(TextPlugin);
 function HeroSection() {
 
     const intro = "Hi, I'm David."
-    const description = "I craft stunning, user-focused websites and dynamic digital experiences that help businesses stand out and drive results.\ From design to development, I bring ideas to life online"
+    const description = "My journey as a developer began with creating video games in Unity, where I first discovered my passion for coding.\
+                         I then deepened my knowledge by completing The Odin Project's foundations course and studying web development, computer science & data analytics on Codecademy. \
+                         Fast forward to today, I am currently enrolled at iO Academy, studying software engineering with the goal of becoming a web developer."
 
     const prefix = 'I am a ';
     const words = ['Web Developer', 'Designer', 'Software Engineer', 'Student', 'Problem Solver', 'Video Game Addict', 'Creative Thinker', 'Tech Enthusiast'];
     const typeSpeed = 0.15; // Typing speed in seconds per character
     const delayBetweenWords = 2; // Delay in seconds between words
+    const isTyping = false
 
     const autoTypeRef = useRef(null); // Reference to the text element
 
@@ -30,13 +33,31 @@ function HeroSection() {
             tl.to({}, { duration: delayBetweenWords });
             // Deleting animation (from the end)
             tl.to(autoTypeRef.current, {
-                text: '|',
+                text: '',
                 duration: word.length * typeSpeed,
                 ease: 'none',
             });
         });
 
     }, []); 
+
+    const textCursorRef = useRef(null);
+
+    useEffect(() => {
+        const tl = gsap.timeline({repeat: -1});
+
+        tl.fromTo(textCursorRef.current, {
+            opacity: 0,
+            duration: 0,
+            delay: 0.5,
+            // duration: 0.5,
+        }, {
+            opacity: 1,
+            duration: 0.5,
+            delay: 0.5,
+            // duration: 0.5,
+        });
+    }, []);
 
     return (
         <>
@@ -47,10 +68,14 @@ function HeroSection() {
                         <img className="david_image_hero" src="./src/assets/images/David_and_Pablo_Sand_Dunes.jpg" alt="Photo of David and his dog pablo" />
                         <img className="cara_david_image_hero" src="./src/assets/images/cara_david_sedona.jpg" alt="Photo of David and Cara" />
                     </div>
-                    <div className="hero_text">
+                    <div className="hero_content">
                         <div className="hero_statement">
                             <h2>{intro}</h2>
-                            <p><span ref={autoTypeRef}>|</span></p>
+                            <p><span ref={autoTypeRef}></span><span ref={textCursorRef}>|</span></p>
+                        </div>
+                        <span></span>
+                        <div className="hero_description">
+                            <p>{description}</p>
                         </div>
                         {/* <p>{description}</p> */}
                     </div>
