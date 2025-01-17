@@ -181,6 +181,11 @@ footer i {
   filter: grayscale(100%);
 }
 
+.hero_statement {
+  margin-top: 1rem;
+  text-align: left;
+  font-size: 2rem;
+}
 
 /* 
 a {
