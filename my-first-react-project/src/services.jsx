@@ -1,4 +1,8 @@
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { useEffect, useRef } from 'react'
 
+gsap.registerPlugin(ScrollTrigger)
 
 function Services() {
 
@@ -14,6 +18,8 @@ function Services() {
     const seo_text = "Drive traffic and boost visibility with websites optimized for search engines.\
                          I ensure your site is fast, accessible, and structured to rank higher, helping your audience find you effortlessly."
 
+    const webDevSection = useRef(null)
+    // console.log(web_dev_section)
 
 
     return (
@@ -28,7 +34,7 @@ function Services() {
                     </div>
                 </div>
 
-                <div className="services_grid s_grid_item">
+                <div id="web_dev_service" ref={webDevSection} className="services_grid s_grid_item">
                     <span className="s_grid_column_one">(01)</span>
                     <div className = "service">
                         <h4>Web Development</h4>
