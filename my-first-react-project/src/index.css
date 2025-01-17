@@ -107,10 +107,10 @@ nav ul li a::after {
 }
 
 footer {
-  position: fixed;
+  /* position: fixed;
   bottom: 0;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%); */
   width: 100%;
   max-width: var(--max-width-px);
   height: 8vh;
@@ -140,15 +140,45 @@ footer i {
 .container {
   width: 100%;
   max-width: var(--max-width-px);
-  height: 80vh;
-  border: 1px solid black;
+  margin: 1rem 0;
+  /* height: 80vh; */
+  /* border: 1px solid black; */
 }
 
 
 .hero_section {
   margin-top: 10vh;
-  margin-bottom: 10vh;
+  /* margin-bottom: 10vh; */
   /* overflow: scroll; */
+}
+
+.hero_photos {
+  /* border: 1px solid red; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.david_image_hero, .pablo_image_hero, .cara_david_image_hero {
+  width: 100%;
+}
+
+
+.david_image_hero {
+  max-width: 300px;
+  filter: grayscale(100%);
+}
+
+.pablo_image_hero {
+  max-width: 200px;
+  filter: grayscale(100%);
+}
+
+.cara_david_image_hero {
+  max-width: 150px;
+  filter: grayscale(100%);
 }
 
 

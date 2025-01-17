@@ -6,7 +6,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 function Header() {
 
     const name = 'David Smith'
-    const role = 'Software Developer'
+    const role = 'Web Designer & Developer'
 
     const [dateTime, setDateTime] = useState(
         {
