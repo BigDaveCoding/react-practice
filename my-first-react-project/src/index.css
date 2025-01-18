@@ -17,6 +17,8 @@
   --header_small_font_size: 0.8rem;
   --max-width-px: 1280px;
   --background-color: white;
+
+  --project-background-color: rgb(38, 38, 38);
 }
 
 * {
@@ -274,4 +276,70 @@ footer i {
   font-size: 1.1rem;
   padding: 0.5rem 0 0.5rem 0;
   border-bottom: 1px solid black;
+}
+
+
+
+.projects_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.project {
+  background-color: var(--project-background-color);
+  color: #dadada;
+  width: 100%;
+  max-width: 300px;
+  min-height: 250px;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: left;
+  
+}
+
+.trapezoid {
+  border-bottom: 15px solid var(--project-background-color);
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  height: 0;
+  width: 100px;
+  position: absolute;
+  transform: translateY(-35px);
+}
+
+.project_description {
+  padding: 0 10px 0 10px;
+}
+
+.project_description h4 {
+  font-size: 0.7rem;
+  line-height: 1rem;
+  padding-bottom: 10px;
+}
+
+.project_description h3 {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  padding-bottom: 10px;
+}
+
+.project_description p {
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+}
+
+.project_extra_info {
+  padding: 10px 5px 5px 10px;
+  line-height: 1.8rem;;
+}
+
+.project_skills {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;;
+}
+
+.project_skill {
+  margin: 0 15px 0 0;
+  font-size: 0.7rem;
 }
