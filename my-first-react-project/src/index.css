@@ -19,6 +19,7 @@
   --background-color: white;
 
   --project-background-color: rgb(38, 38, 38);
+  --project-icon-hover-color: #0f9611;
 }
 
 * {
@@ -289,7 +290,7 @@ footer i {
   background-color: var(--project-background-color);
   color: #dadada;
   width: 100%;
-  max-width: 300px;
+  max-width: 350px;
   min-height: 250px;
   padding: 1.5rem;
   border-radius: 10px;
@@ -323,6 +324,17 @@ footer i {
   padding-bottom: 10px;
 }
 
+.project_icons {
+  font-size: 1.3rem;
+  margin: 0 0 0 10px;
+  cursor: pointer;
+
+}
+
+.project_icons:hover {
+  color: var(--project-icon-hover-color);
+}
+
 .project_description p {
   font-size: 0.9rem;
   line-height: 1.3rem;
@@ -330,7 +342,8 @@ footer i {
 
 .project_extra_info {
   padding: 10px 5px 5px 10px;
-  line-height: 1.8rem;;
+  line-height: 1.8rem;
+  
 }
 
 .project_skills {
