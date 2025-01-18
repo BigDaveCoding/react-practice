@@ -281,6 +281,11 @@ footer i {
 
 
 
+
+.projects_section {
+  margin: 5rem 0;
+}
+
 .projects_grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

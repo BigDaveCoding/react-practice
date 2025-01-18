@@ -1,3 +1,5 @@
+
+import {useEffect, useState, useRef } from 'react';
 import gsap from 'gsap';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
@@ -24,10 +26,10 @@ function Projects() {
         "HTML",
         "CSS",
         "JavaScript",
+        "GSAP Animations",
         "Responsive Design",
         "Performance Optimization",
         "UI/UX Design",
-        "Interactive Portfolio"
     ];
 
     const kankei_desc = "This project involved developing a modern & professional website.\
@@ -45,8 +47,35 @@ function Projects() {
 
     ];
 
+    const project_one_ref = useRef(null);
+    const project_two_ref = useRef(null);
+    const project_three_ref = useRef(null);
 
+    useEffect(() => {
+        const sections = [project_one_ref.current, project_two_ref.current, project_three_ref.current];
 
+        sections.forEach((section) => {
+            if (section) {
+                section.addEventListener('mouseover', () => {
+                    gsap.to(section, {
+                        y: -15,
+                        duration: 1,
+                    });
+                });
+            }
+        });
+
+        sections.forEach((section) => {
+            if (section) {
+                section.addEventListener('mouseleave', () => {
+                    gsap.to(section, {
+                        y: 0,
+                        duration: 1,
+                    });
+                });
+            }
+        });
+    }, []);
 
 
 
@@ -56,7 +85,7 @@ function Projects() {
 
                 <div className="projects_grid">
 
-                <div className = "project">
+                    <div ref={project_one_ref} className = "project">
                         <div className="trapezoid">
                         </div>
                         <div className="project_description">
@@ -81,7 +110,7 @@ function Projects() {
                         </div>
                     </div>
 
-                    <div className = "project">
+                    <div ref={project_two_ref} className = "project">
                         <div className="trapezoid">
                         </div>
                         <div className="project_description">
@@ -109,7 +138,7 @@ function Projects() {
                         </div>
                     </div>
 
-                    <div className = "project">
+                    <div ref={project_three_ref} className = "project">
                         <div className="trapezoid">
                         </div>
                         <div className="project_description">
