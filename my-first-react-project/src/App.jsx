@@ -5,6 +5,7 @@ import Footer from './footer.jsx'
 import HeroSection from './hero.jsx'
 import Services from './services.jsx'
 import Projects from './projects.jsx'
+import Contact from './contact.jsx'
 
 function App() {
 
@@ -14,7 +15,9 @@ function App() {
       <HeroSection />
       <Services />
       <Projects />
-      <HeroSection />
+      {/* <HeroSection /> */}
+      <Contact />
+
       <Footer />
     </>
   )
