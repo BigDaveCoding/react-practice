@@ -367,6 +367,7 @@ footer i {
 .contact_grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 2rem;
 }
 
 .contact_form_grid {
@@ -409,4 +410,24 @@ footer i {
   height: 2rem;
   background-color: var(--project-background-color);
   color: var(--project-font-color);
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.contact_bio {
+  text-align: left;
+  padding: 0 0 1rem 0;
+  
+}
+
+.contact_form_icons {
+  display: flex;
+  gap: 1rem;
+  font-size: 2rem;
 }

@@ -1,7 +1,10 @@
-
+import { useState, useEffect } from 'react';
+import BioData from './contact_bio.json';
+import '@fortawesome/fontawesome-free';
 
 
 function Contact() {
+
     return (
         <>
             <section className="contact_section">
@@ -29,6 +32,18 @@ function Contact() {
 
                         </div>
                         <div className = "contact_info_socials">
+
+                            <div className="bio">
+                            {BioData.bio.map((para, index) => (
+                                        <p className="contact_bio" key={index}>{para}</p>
+                                    ))};
+                                <div className ="contact_form_icons">
+                                    <i className="fa-brands fa-github"></i>
+                                    <i className="fa-brands fa-linkedin"></i>
+                                    <i className="fa-brands fa-instagram"></i>
+                                    
+                                </div>
+                            </div>
                             
 
                         </div>
