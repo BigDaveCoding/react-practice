@@ -19,6 +19,7 @@
   --background-color: white;
 
   --project-background-color: rgb(38, 38, 38);
+  --project-font-color: #dadada;
   --project-icon-hover-color: #0f9611;
 }
 
@@ -293,7 +294,7 @@ footer i {
 
 .project {
   background-color: var(--project-background-color);
-  color: #dadada;
+  color: var(--project-font-color);
   width: 100%;
   max-width: 350px;
   min-height: 250px;
@@ -360,4 +361,52 @@ footer i {
 .project_skill {
   margin: 0 15px 0 0;
   font-size: 0.7rem;
+}
+
+
+.contact_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact_form_grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem 5rem;
+}
+
+.contact_form_grid label {
+  text-align: left;
+  padding:0 0 0.75rem 0;
+  font-size: 0.8rem;
+}
+
+.contact_form_email_input, .contact_form_item input, .contact_form_message {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.648);
+  padding: 5px 0;
+  height: 2rem;
+  /* margin: 0 10px; */
+}
+
+.contact_form_message {
+  text-align: left;
+  grid-column: span 2;
+}
+
+.contact_form_item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.contact_form_submit {
+  grid-column: span 2;
+  margin-top: 1rem;
+  border: 0;
+  height: 2rem;
+  background-color: var(--project-background-color);
+  color: var(--project-font-color);
 }
