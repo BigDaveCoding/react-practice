@@ -16,27 +16,28 @@ function Interests() {
                                 Whether it’s designing websites that are easy to use and visually stunning, exploring new tech like animations and interactive features,\
                                 or diving into data to understand what works best—I'm always learning and pushing my boundaries to build something meaningful"
 
-    const seo_text = "Drive traffic and boost visibility with websites optimized for search engines.\
-                         I ensure your site is fast, accessible, and structured to rank higher, helping your audience find you effortlessly."
+    const game_dev_text = "I’ve always loved bringing stories to life through interactive experiences.\
+     Whether it’s developing gameplay mechanics or designing immersive environments, I enjoy combining creativity and coding to create fun and engaging video games.\
+      I focus on making the player experience seamless and exciting, always looking for new ways to enhance gameplay and push technical limits."
 
 
     const introSection = useRef(null)
     const webDevSection = useRef(null)
     const webDesignSection = useRef(null)
-    const seoSection = useRef(null)
+    const gameDevSection = useRef(null)
 
     useEffect(() => {
         const webDev = webDevSection.current;
         const webDesign = webDesignSection.current;
-        const seo = seoSection.current;
+        const gameDev = gameDevSection.current;
 
     
-        if (webDev && webDesign && seo) {
+        if (webDev && webDesign && gameDevSection) {
             gsap.to(webDev, {
                 scrollTrigger: {
                     trigger: webDev,
                     start: 'top 10%', // Pin starts when the top of the element reaches the top of the viewport
-                    endTrigger: seo,
+                    endTrigger: gameDev,
                     end: 'top 25%', 
                     pin: true,
                     pinSpacing: false,
@@ -48,7 +49,7 @@ function Interests() {
                 scrollTrigger: {
                     trigger: webDesign,
                     start: 'top 17.5%',
-                    endTrigger: seo,
+                    endTrigger: gameDev,
                     end: 'top 25%',
                     pin: true,
                     pinSpacing: false,
@@ -56,9 +57,9 @@ function Interests() {
                 }
             });
 
-            gsap.to(seo, {
+            gsap.to(gameDev, {
                 scrollTrigger: {
-                    trigger: seo,
+                    trigger: gameDev,
                     start: 'top 25%',
                     end: 'top 25%',
                     pin: true,
@@ -78,7 +79,7 @@ function Interests() {
         const intro = introSection.current;
         const webDev = webDevSection.current;
         const webDesign = webDesignSection.current;
-        const seo = seoSection.current;
+        const gameDev = gameDevSection.current;
 
         if(intro) {
             gsap.fromTo(intro, {
@@ -129,8 +130,8 @@ function Interests() {
             })
         }
 
-        if (seo) {
-            gsap.fromTo(seo, {
+        if (gameDev) {
+            gsap.fromTo(gameDev, {
                 opacity: 0,
                 x: -500,
             }, {
@@ -138,7 +139,7 @@ function Interests() {
                 x: 0,
                 duration: 1,
                 scrollTrigger: {
-                    trigger: seo,
+                    trigger: gameDev,
                     start: 'top 75%',
                     end: 'bottom 50%',
                 }
@@ -194,11 +195,11 @@ function Interests() {
                     </div>
                 </div>
 
-                <div ref={seoSection} className="services_grid s_grid_item">
+                <div ref={gameDevSection} className="services_grid s_grid_item">
                     <span className="s_grid_column_one">(03)</span>
                     <div className = "service">
-                        <h4>SEO</h4>
-                        <p>{seo_text}</p>
+                        <h4>Game Development</h4>
+                        <p>{game_dev_text}</p>
                         <ul>
                             <li><span className="service_list_key"><sup>01</sup></span>On-Page SEO</li>
                             <li><span className="service_list_key"><sup>02</sup></span>Analytics & reporting</li>
