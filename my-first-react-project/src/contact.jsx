@@ -36,7 +36,7 @@ function Contact() {
                             <div className="bio">
                             {BioData.bio.map((para, index) => (
                                         <p className="contact_bio" key={index}>{para}</p>
-                                    ))};
+                                    ))}
                                 <div className ="contact_form_icons">
                                     <i className="fa-brands fa-github"></i>
                                     <i className="fa-brands fa-linkedin"></i>

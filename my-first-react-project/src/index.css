@@ -516,9 +516,9 @@ footer i {
     
   }
 
-  .projects_section {
+  /* .projects_section {
     margin: 3rem 0 0 0;
-  }
+  } */
 
   .projects_grid{
     grid-template-columns: 1fr;
@@ -534,6 +534,18 @@ footer i {
 
   .service p {
     padding: 1rem 4rem 1rem 0;
+  }
+
+  .contact_grid {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .contact_form_grid {
+    gap: 3rem;
+  }
+
+  .contact_form_grid label:last-of-type {
+    grid-column: span 2;
   }
 
 }
