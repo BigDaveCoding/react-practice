@@ -138,7 +138,7 @@ function Projects() {
                         </div>
                     </div>
 
-                    <div ref={project_three_ref} className = "project">
+                    <div ref={project_three_ref} className = "project last_project">
                         <div className="trapezoid">
                         </div>
                         <div className="project_description">
