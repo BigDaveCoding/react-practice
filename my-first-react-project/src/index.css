@@ -498,6 +498,10 @@ footer i {
     max-width: 700px;
   }
 
+  nav ul {
+    gap: 0;
+  }
+
   .page_title h1 {
     font-size: 1.3rem;
   }
