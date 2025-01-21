@@ -610,6 +610,10 @@ footer i {
     display: none;
   }
 
+  .service p {
+    font-size: 1.1rem;
+  }
+
   .project {
     max-width: 400px;
   }
@@ -620,5 +624,13 @@ footer i {
 
   .project_skill {
     font-size: 0.9rem;
+  }
+
+  .contact_bio {
+    font-size: 1.1rem;
+  }
+
+  .contact_form_grid label {
+    font-size: 1rem;
   }
 }
