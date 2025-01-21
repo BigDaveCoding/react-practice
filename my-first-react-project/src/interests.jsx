@@ -16,6 +16,8 @@ function Interests() {
                                 Whether it’s designing websites that are easy to use and visually stunning, exploring new tech like animations and interactive features,\
                                 or diving into data to understand what works best—I'm always learning and pushing my boundaries to build something meaningful"
 
+    const data_analytics_text = "I love diving into data to uncover insights and tell stories."
+
     const game_dev_text = "I’ve always loved bringing stories to life through interactive experiences.\
                             Whether it’s developing gameplay mechanics or designing immersive environments, I enjoy combining creativity and coding to create fun and engaging video games.\
                              I focus on making the player experience seamless and exciting, always looking for new ways to enhance gameplay and push technical limits."
@@ -24,15 +26,17 @@ function Interests() {
     const introSection = useRef(null)
     const webDevSection = useRef(null)
     const webDesignSection = useRef(null)
+    const dataAnalyticsSection = useRef(null)
     const gameDevSection = useRef(null)
 
     useEffect(() => {
         const webDev = webDevSection.current;
         const webDesign = webDesignSection.current;
+        const dataAnalytics = dataAnalyticsSection.current;
         const gameDev = gameDevSection.current;
 
     
-        if (webDev && webDesign && gameDevSection) {
+        if (webDev && webDesign && gameDevSection && dataAnalytics) {
             gsap.to(webDev, {
                 scrollTrigger: {
                     trigger: webDev,
@@ -57,10 +61,22 @@ function Interests() {
                 }
             });
 
+            gsap.to(dataAnalytics, {
+                scrollTrigger: {
+                    trigger: dataAnalytics,
+                    start: 'top 25%',
+                    endTrigger: gameDev,
+                    end: 'top 25%',
+                    pin: true,
+                    pinSpacing: false,
+                    // markers: true,
+                }
+            });
+
             gsap.to(gameDev, {
                 scrollTrigger: {
                     trigger: gameDev,
-                    start: 'top 25%',
+                    start: 'top 32.5%',
                     end: 'top 25%',
                     pin: true,
                     pinSpacing: false,
@@ -79,6 +95,7 @@ function Interests() {
         const intro = introSection.current;
         const webDev = webDevSection.current;
         const webDesign = webDesignSection.current;
+        const dataAnalytics = dataAnalyticsSection.current;
         const gameDev = gameDevSection.current;
 
         if(intro) {
@@ -130,10 +147,28 @@ function Interests() {
             })
         }
 
+        if (dataAnalytics) {
+            gsap.fromTo(dataAnalytics, {
+                opacity: 0,
+                x: -500, 
+            },  {
+                opacity: 1,
+                x: 0,
+                duration: 1,
+                scrollTrigger: {
+                    trigger: dataAnalytics,
+                    start: "top 75%",
+                    end: "bottom 50%"
+                }
+            });
+
+        }
+        
+
         if (gameDev) {
             gsap.fromTo(gameDev, {
                 opacity: 0,
-                x: -500,
+                x: 500,
             }, {
                 opacity: 1,
                 x: 0,
@@ -187,6 +222,19 @@ function Interests() {
                     <div className = "service">
                         <h4>Web Design</h4>
                         <p>{web_design_text}</p>
+                        <ul>
+                            <li><span className="service_list_key"><sup>01</sup></span>Responsive Design</li>
+                            <li><span className="service_list_key"><sup>02</sup></span>CSS Frameworks</li>
+                            <li><span className="service_list_key"><sup>03</sup></span>UI/UX Design</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div ref={dataAnalyticsSection} className="services_grid s_grid_item">
+                    <span className="s_grid_column_one">(02)</span>
+                    <div className = "service">
+                        <h4>Data Analytics</h4>
+                        <p>{data_analytics_text}</p>
                         <ul>
                             <li><span className="service_list_key"><sup>01</sup></span>Responsive Design</li>
                             <li><span className="service_list_key"><sup>02</sup></span>CSS Frameworks</li>
