@@ -585,3 +585,20 @@ footer i {
   }
 
 }
+
+@media screen and (max-width: 590px){
+
+  header {
+    margin: 0;
+  }
+
+  .header_grid {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+  }
+
+  .date_time {
+    display: none;
+  }
+}
