@@ -183,7 +183,7 @@ footer i {
 }
 
 .cara_david_image_hero {
-  max-width: 150px;
+  max-width: 200px;
   filter: grayscale(100%);
 }
 
@@ -496,6 +496,10 @@ footer i {
 
   header {
     max-width: 700px;
+  }
+
+  .date_time {
+    gap: 1rem;
   }
 
   nav ul {
