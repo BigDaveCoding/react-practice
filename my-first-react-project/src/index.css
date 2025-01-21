@@ -554,3 +554,15 @@ footer i {
   }
 
 }
+
+@media screen and (max-width: 650px){
+
+  .hero_content {
+    grid-template-columns: 1fr;
+  }
+
+  .hero_statement {
+    height: 125px;
+  }
+
+}
