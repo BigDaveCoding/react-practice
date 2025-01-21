@@ -516,6 +516,10 @@ footer i {
     
   }
 
+  .projects_section {
+    margin: 3rem 0 0 0;
+  }
+
   .projects_grid{
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -523,6 +527,13 @@ footer i {
 
   .last_project {
     grid-column: span 1;
+  }
+  .services_grid {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .service p {
+    padding: 1rem 4rem 1rem 0;
   }
 
 }
