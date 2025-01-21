@@ -12,9 +12,9 @@ function Interests() {
     const web_dev_text = "Web development is what I’m all about. I love making websites that are smooth, interactive, and easy to use.\
                             I’m always excited to learn new frameworks and design tricks to keep improving and making sites more fun and efficient."
 
-    const web_design_text = "Enhance your digital presence with a website that resonates with your audience.\
-                             I create visually captivating, user-focused designs that not only reflect your brand but also drive engagement,\
-                              helping you achieve your business goals and grow effortlessly."
+    const web_design_text = "I’m really into creating digital experiences that connect with people.\
+                                Whether it’s designing websites that are easy to use and visually stunning, exploring new tech like animations and interactive features,\
+                                or diving into data to understand what works best—I'm always learning and pushing my boundaries to build something meaningful"
 
     const seo_text = "Drive traffic and boost visibility with websites optimized for search engines.\
                          I ensure your site is fast, accessible, and structured to rank higher, helping your audience find you effortlessly."
@@ -188,7 +188,7 @@ function Interests() {
                         <p>{web_design_text}</p>
                         <ul>
                             <li><span className="service_list_key"><sup>01</sup></span>Responsive Design</li>
-                            <li><span className="service_list_key"><sup>02</sup></span>Wireframing</li>
+                            <li><span className="service_list_key"><sup>02</sup></span>CSS Frameworks</li>
                             <li><span className="service_list_key"><sup>03</sup></span>UI/UX Design</li>
                         </ul>
                     </div>
