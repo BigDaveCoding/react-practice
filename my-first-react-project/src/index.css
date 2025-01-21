@@ -516,10 +516,6 @@ footer i {
     
   }
 
-  /* .projects_section {
-    margin: 3rem 0 0 0;
-  } */
-
   .projects_grid{
     grid-template-columns: 1fr;
     gap: 2rem;
