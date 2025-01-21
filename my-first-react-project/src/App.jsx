@@ -6,6 +6,7 @@ import HeroSection from './hero.jsx'
 import Services from './services.jsx'
 import Projects from './projects.jsx'
 import Contact from './contact.jsx'
+import Interests from './interests.jsx'
 
 function App() {
 
@@ -13,7 +14,8 @@ function App() {
     <>
       <Header />
       <HeroSection />
-      <Services />
+      <Interests />
+      {/* <Services /> */}
       <Projects />
       {/* <HeroSection /> */}
       <Contact />
