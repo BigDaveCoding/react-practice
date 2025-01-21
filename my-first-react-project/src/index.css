@@ -516,4 +516,13 @@ footer i {
     
   }
 
+  .projects_grid{
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .last_project {
+    grid-column: span 1;
+  }
+
 }
