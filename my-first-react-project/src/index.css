@@ -440,3 +440,16 @@ footer i {
   gap: 1rem;
   font-size: 2rem;
 }
+
+
+
+
+
+
+
+@media (max-width: 1024px){
+
+body {
+    background-color: yellow;
+}
+}
