@@ -601,4 +601,12 @@ footer i {
   .date_time {
     display: none;
   }
+
+  .hero_photos {
+    grid-template-columns: 1fr;
+  }
+
+  .pablo_image_hero, .cara_david_image_hero {
+    display: none;
+  }
 }
