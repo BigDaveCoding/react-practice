@@ -575,4 +575,13 @@ footer i {
     grid-template-columns: 1fr 4fr;
   }
 
+  .contact_grid {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .contact_form_grid {
+    gap: 1rem;
+  }
+
 }
