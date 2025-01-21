@@ -16,7 +16,8 @@ function Interests() {
                                 Whether it’s designing websites that are easy to use and visually stunning, exploring new tech like animations and interactive features,\
                                 or diving into data to understand what works best—I'm always learning and pushing my boundaries to build something meaningful"
 
-    const data_analytics_text = "I love diving into data to uncover insights and tell stories."
+    const data_analytics_text = "I love digging into data to find patterns and uncover insights that can actually make a difference.\
+                                 Whether it’s spotting trends, streamlining processes, or creating cool visualizations, I enjoy using data to solve problems and help guide smarter decisions."
 
     const game_dev_text = "I’ve always loved bringing stories to life through interactive experiences.\
                             Whether it’s developing gameplay mechanics or designing immersive environments, I enjoy combining creativity and coding to create fun and engaging video games.\
@@ -106,7 +107,7 @@ function Interests() {
                 duration: 2,
                 scrollTrigger: {
                     trigger: intro,
-                    start: 'top 70%',
+                    start: 'top 65%',
                     end: 'bottom 50%',
                     // markers: true,
                 }
@@ -231,20 +232,20 @@ function Interests() {
                 </div>
 
                 <div ref={dataAnalyticsSection} className="services_grid s_grid_item">
-                    <span className="s_grid_column_one">(02)</span>
+                    <span className="s_grid_column_one">(03)</span>
                     <div className = "service">
                         <h4>Data Analytics</h4>
                         <p>{data_analytics_text}</p>
                         <ul>
-                            <li><span className="service_list_key"><sup>01</sup></span>Responsive Design</li>
-                            <li><span className="service_list_key"><sup>02</sup></span>CSS Frameworks</li>
-                            <li><span className="service_list_key"><sup>03</sup></span>UI/UX Design</li>
+                            <li><span className="service_list_key"><sup>01</sup></span>Automation & Scripting</li>
+                            <li><span className="service_list_key"><sup>02</sup></span>Scalable Code</li>
+                            <li><span className="service_list_key"><sup>03</sup></span>Insight Discovery</li>
                         </ul>
                     </div>
                 </div>
 
                 <div ref={gameDevSection} className="services_grid s_grid_item">
-                    <span className="s_grid_column_one">(03)</span>
+                    <span className="s_grid_column_one">(04)</span>
                     <div className = "service">
                         <h4>Game Development</h4>
                         <p>{game_dev_text}</p>
