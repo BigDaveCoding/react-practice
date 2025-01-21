@@ -17,8 +17,8 @@ function Interests() {
                                 or diving into data to understand what works best—I'm always learning and pushing my boundaries to build something meaningful"
 
     const game_dev_text = "I’ve always loved bringing stories to life through interactive experiences.\
-     Whether it’s developing gameplay mechanics or designing immersive environments, I enjoy combining creativity and coding to create fun and engaging video games.\
-      I focus on making the player experience seamless and exciting, always looking for new ways to enhance gameplay and push technical limits."
+                            Whether it’s developing gameplay mechanics or designing immersive environments, I enjoy combining creativity and coding to create fun and engaging video games.\
+                             I focus on making the player experience seamless and exciting, always looking for new ways to enhance gameplay and push technical limits."
 
 
     const introSection = useRef(null)
@@ -201,9 +201,9 @@ function Interests() {
                         <h4>Game Development</h4>
                         <p>{game_dev_text}</p>
                         <ul>
-                            <li><span className="service_list_key"><sup>01</sup></span>On-Page SEO</li>
-                            <li><span className="service_list_key"><sup>02</sup></span>Analytics & reporting</li>
-                            <li><span className="service_list_key"><sup>03</sup></span>Content Optimization</li>
+                            <li><span className="service_list_key"><sup>01</sup></span>Object-Oriented Programming</li>
+                            <li><span className="service_list_key"><sup>02</sup></span>Efficient Alogorithms</li>
+                            <li><span className="service_list_key"><sup>03</sup></span>Modular Code</li>
                         </ul>
                     </div>
                 </div>
