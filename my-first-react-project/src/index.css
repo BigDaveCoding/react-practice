@@ -609,4 +609,16 @@ footer i {
   .pablo_image_hero, .cara_david_image_hero {
     display: none;
   }
+
+  .project {
+    max-width: 400px;
+  }
+
+  .project_description p {
+    font-size: 1.1rem;
+  }
+
+  .project_skill {
+    font-size: 0.9rem;
+  }
 }
