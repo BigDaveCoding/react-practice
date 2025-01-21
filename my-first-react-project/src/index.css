@@ -565,4 +565,14 @@ footer i {
     height: 125px;
   }
 
+  .s_grid_intro {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .services_grid {
+    grid-template-columns: 1fr 4fr;
+  }
+
 }
