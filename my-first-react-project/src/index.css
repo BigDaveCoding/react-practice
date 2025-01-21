@@ -364,6 +364,15 @@ footer i {
 }
 
 
+
+
+.contact_title {
+  text-align: left;
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+
+
 .contact_grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -373,7 +382,7 @@ footer i {
 .contact_form_grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 1rem 5rem;
+  gap: 1rem 2rem;
 }
 
 .contact_form_grid label {
