@@ -47,7 +47,6 @@ header {
   padding-bottom: 1vh;
   /* margin: 1rem 0; */
   letter-spacing: 0.05rem;
-  background-color: var(--background-color);
 }
 
 .page_title {
@@ -634,23 +633,4 @@ footer i {
   .contact_form_grid label {
     font-size: 1rem;
   }
-}
-
-@media screen and (max-width: 515px){
-
-  .header_grid {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav ul {
-    display: flex;
-    gap: 2rem;
-    padding-top: 0.25rem;
-  }
-
-  .hero_section {
-    margin-top: 12.5vh;
-  }
-
 }
