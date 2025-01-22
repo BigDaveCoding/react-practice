@@ -64,9 +64,9 @@ function HeroSection() {
             <section className="hero_section">
                 <div className="container">
                     <div className="hero_photos">
-                        <img className="pablo_image_hero" src="./public/images/pablo_behind_head.JPG" alt="Photo of Pablo the dog" />
-                        <img className="david_image_hero" src="./public/images/David_and_Pablo_Sand_Dunes.jpg" alt="Photo of David and his dog pablo" />
-                        <img className="cara_david_image_hero" src="./public/images/cara_david_sedona.jpg" alt="Photo of David and Cara" />
+                        <img className="pablo_image_hero" src="/images/pablo_behind_head.JPG" alt="Photo of Pablo the dog" />
+                        <img className="david_image_hero" src="/images/David_and_Pablo_Sand_Dunes.jpg" alt="Photo of David and his dog pablo" />
+                        <img className="cara_david_image_hero" src="/images/cara_david_sedona.jpg" alt="Photo of David and Cara" />
                     </div>
                     <div className="hero_content">
                         <div className="hero_statement">
