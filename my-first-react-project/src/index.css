@@ -678,6 +678,7 @@ footer i {
   
   .services_grid {
     grid-template-columns: 1fr;
+    padding: 5px;
 
   }
 
@@ -686,7 +687,7 @@ footer i {
   }
 
   .service p, .service ul li {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 
   .contact_form_grid {
