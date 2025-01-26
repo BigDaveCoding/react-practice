@@ -81,7 +81,7 @@ function Projects() {
 
     return (
         <>
-            <section className="projects_section">
+            <section id="projects_section" className="projects_section">
 
                 <div className="projects_grid">
 
