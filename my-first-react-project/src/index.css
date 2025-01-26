@@ -27,6 +27,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -48,10 +52,6 @@ header {
   /* margin: 1rem 0; */
   letter-spacing: 0.05rem;
   background-color: var(--background-color)
-}
-
-#hero_section_link {
-  scroll-behaviour: smooth;
 }
 
 .page_title {
