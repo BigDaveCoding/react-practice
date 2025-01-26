@@ -16,7 +16,6 @@ function Contact() {
 
                         <form action="https://formsubmit.co/bigdavecoding@gmail.com" method="POST">
                             <div className = "contact_form_grid">
-                            
                                 <div className="contact_form_item">
                                     <label htmlFor="name">Your name</label>
                                     <input type="text" id="name" name="name" placeholder="Your name" />
