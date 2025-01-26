@@ -86,9 +86,9 @@ function Header() {
                 <nav className="header_grid_item">
                     <ul>
                         <li><a href="#hero_section" onClick={(e) => handleScroll(e, 'hero_section')} >Home</a></li>
-                        <li><a href="#interests_section">About</a></li>
-                        <li><a href="#projects_section">Projects</a></li>
-                        <li><a href="#contact_section">Contact</a></li>
+                        <li><a href="#interests_section" onClick={(e) => handleScroll(e, 'interests_section')} >About</a></li>
+                        <li><a href="#projects_section" onClick={(e) => handleScroll(e, 'projects_section')} >Projects</a></li>
+                        <li><a href="#contact_section" onClick={(e) => handleScroll(e, 'contact_section')} >Contact</a></li>
                     </ul>
                 </nav>
             </div>
