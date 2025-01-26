@@ -70,7 +70,7 @@ function Header() {
                 </div>
                 <nav className="header_grid_item">
                     <ul>
-                        <li><a href="#">Home</a></li>
+                        <li><a id="hero_section_link" href="#hero_section">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Projects</a></li>
                         <li><a href="#">Contact</a></li>

@@ -61,7 +61,7 @@ function HeroSection() {
 
     return (
         <>
-            <section className="hero_section">
+            <section id="hero_section" className="hero_section">
                 <div className="container">
                     <div className="hero_photos">
                         <img className="pablo_image_hero" src="/images/pablo_behind_head.JPG" alt="Photo of Pablo the dog" />

@@ -50,6 +50,10 @@ header {
   background-color: var(--background-color)
 }
 
+#hero_section_link {
+  scroll-behaviour: smooth;
+}
+
 .page_title {
   letter-spacing: 0.3rem;
 }
@@ -678,7 +682,6 @@ footer i {
   
   .services_grid {
     grid-template-columns: 1fr;
-
   }
 
   .service h4 {
