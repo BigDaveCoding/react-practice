@@ -34,9 +34,9 @@ header {
   transform: translateX(-50%);
   width: 100%;
   max-width: var(--max-width-px);
-  height: 8vh;
+  height: 10vh;
   opacity: 0; /* Hide Header Initially. GSAP Animation Fades Opacity In */
-  margin: 1vh 0 1vh 0;
+  /* margin: 1vh 0 1vh 0; */
   z-index: 1000;
 }
 
@@ -47,6 +47,7 @@ header {
   padding-bottom: 1vh;
   /* margin: 1rem 0; */
   letter-spacing: 0.05rem;
+  background-color: var(--background-color)
 }
 
 .page_title {
