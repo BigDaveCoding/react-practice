@@ -678,7 +678,6 @@ footer i {
   
   .services_grid {
     grid-template-columns: 1fr;
-    padding: 5px;
 
   }
 
