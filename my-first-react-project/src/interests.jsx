@@ -118,11 +118,11 @@ function Interests() {
         if (webDev) {
             gsap.fromTo(webDev, {
                 opacity: 0,
-                x: -500,
+                // x: -500,
             }, {
                 opacity: 1,
-                x: 0,
-                duration: 0.3,
+                // x: 0,
+                duration: 1,
 
                 scrollTrigger: {
                     trigger: webDev,
@@ -135,11 +135,11 @@ function Interests() {
         if (webDesign) {
             gsap.fromTo(webDesign, {
                 opacity: 0,
-                x: 500,
+                // x: 500,
             }, {
                 opacity: 1,
-                x: 0,
-                duration: 0.3,
+                // x: 0,
+                duration: 1,
                 scrollTrigger: {
                     trigger: webDesign,
                     start: 'top 75%',
@@ -151,11 +151,11 @@ function Interests() {
         if (dataAnalytics) {
             gsap.fromTo(dataAnalytics, {
                 opacity: 0,
-                x: -500, 
+                // x: -500, 
             },  {
                 opacity: 1,
-                x: 0,
-                duration: 0.3,
+                // x: 0,
+                duration: 1,
                 scrollTrigger: {
                     trigger: dataAnalytics,
                     start: "top 75%",
@@ -169,11 +169,11 @@ function Interests() {
         if (gameDev) {
             gsap.fromTo(gameDev, {
                 opacity: 0,
-                x: 500,
+                // x: 500,
             }, {
                 opacity: 1,
-                x: 0,
-                duration: 0.3,
+                // x: 0,
+                duration: 1,
                 scrollTrigger: {
                     trigger: gameDev,
                     start: 'top 75%',
