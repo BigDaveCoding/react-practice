@@ -49,6 +49,21 @@ function Header() {
             });
         }  
     }, []);
+
+    const handleScroll = (e, targetId) => {
+        e.preventDefault()
+        const element = document.getElementById(targetId);
+        console.log(element)
+        if (element) {
+            const offset = 10 * window.innerHeight / 100;
+            const targetPos = element.offsetTop - offset
+
+            window.scrollTo({
+                top: targetPos,
+                behavior: 'smooth',
+            });
+        }
+    };
     
 
     return (
@@ -70,7 +85,7 @@ function Header() {
                 </div>
                 <nav className="header_grid_item">
                     <ul>
-                        <li><a href="#hero_section">Home</a></li>
+                        <li><a href="#hero_section" onClick={(e) => handleScroll(e, 'hero_section')} >Home</a></li>
                         <li><a href="#interests_section">About</a></li>
                         <li><a href="#projects_section">Projects</a></li>
                         <li><a href="#contact_section">Contact</a></li>
