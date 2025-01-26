@@ -651,12 +651,49 @@ footer i {
 
 @media screen and (max-width: 425px) {
 
+  .header_grid {
+    padding: 0.5rem 0.5rem;
+  }
+
+  .hero_content {
+    margin: 2.3rem 0;
+  }
+
+  .hero_statement span {
+    font-size: 1.5rem;
+  }
+
   .services_title {
     font-size: 3rem;
   }
 
   .service h4 {
     font-size: 1.8rem;
+  }
+
+  .s_grid_column_one {
+    display: none;
+  } 
+  
+  .services_grid {
+    grid-template-columns: 1fr;
+
+  }
+
+  .service h4 {
+    font-size: 1.5rem;
+  }
+
+  .service p, .service ul li {
+    font-size: 1rem;
+  }
+
+  .contact_form_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact_form_item{
+    grid-column: span 2;
   }
 
 }
