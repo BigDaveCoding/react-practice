@@ -634,3 +634,29 @@ footer i {
     font-size: 1rem;
   }
 }
+
+@media screen and (max-width: 505px) {
+
+  nav {
+    display: none;
+  }
+
+  .header_grid {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+@media screen and (max-width: 425px) {
+
+  .services_title {
+    font-size: 3rem;
+  }
+
+  .service h4 {
+    font-size: 1.8rem;
+  }
+
+}
