@@ -13,9 +13,10 @@ function Contact() {
                     <h2 className = "contact_title">Get In Touch.</h2>
 
                     <div className="contact_grid">
-                        <div className = "contact_form_grid">
 
-                            <form action="https://formsubmit.co/bigdavecoding@gmail.com" method="POST">
+                        <form action="https://formsubmit.co/bigdavecoding@gmail.com" method="POST">
+                            <div className = "contact_form_grid">
+                            
                                 <div className="contact_form_item">
                                     <label htmlFor="name">Your name</label>
                                     <input type="text" id="name" name="name" placeholder="Your name" />
@@ -27,9 +28,9 @@ function Contact() {
                                 <label htmlFor="message">Message / Enquiry</label>
                                 <textarea className="contact_form_message" name="message" id="message" placeholder="Enter your message here"></textarea>
                                 <input className="contact_form_submit" type="submit" value="Send" />
-                            </form>
+                            </div>
+                        </form>
 
-                        </div>
                         <div className = "contact_info_socials">
 
                             <div className="bio">
