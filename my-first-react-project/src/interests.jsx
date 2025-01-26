@@ -122,7 +122,7 @@ function Interests() {
             }, {
                 opacity: 1,
                 x: 0,
-                duration: 1,
+                duration: 0.3,
 
                 scrollTrigger: {
                     trigger: webDev,
@@ -139,7 +139,7 @@ function Interests() {
             }, {
                 opacity: 1,
                 x: 0,
-                duration: 1,
+                duration: 0.3,
                 scrollTrigger: {
                     trigger: webDesign,
                     start: 'top 75%',
@@ -155,7 +155,7 @@ function Interests() {
             },  {
                 opacity: 1,
                 x: 0,
-                duration: 1,
+                duration: 0.3,
                 scrollTrigger: {
                     trigger: dataAnalytics,
                     start: "top 75%",
@@ -173,7 +173,7 @@ function Interests() {
             }, {
                 opacity: 1,
                 x: 0,
-                duration: 1,
+                duration: 0.3,
                 scrollTrigger: {
                     trigger: gameDev,
                     start: 'top 75%',
