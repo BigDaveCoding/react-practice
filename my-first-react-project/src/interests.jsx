@@ -193,7 +193,7 @@ function Interests() {
 
     return (
         <>
-            <section className="services_section">
+            <section id="interests_section" className="services_section">
                 <div ref={introSection}>
                     <h3 className="services_title">AREAS I'M EXPLORING</h3>
                     <div className="services_grid">
