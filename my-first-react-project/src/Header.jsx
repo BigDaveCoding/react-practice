@@ -53,7 +53,6 @@ function Header() {
     const handleScroll = (e, targetId) => {
         e.preventDefault()
         const element = document.getElementById(targetId);
-        console.log(element)
         if (element) {
             const offset = 10 * window.innerHeight / 100;
             const targetPos = element.offsetTop - offset
