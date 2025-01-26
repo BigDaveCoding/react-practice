@@ -7,7 +7,7 @@ function Contact() {
 
     return (
         <>
-            <section className="contact_section">
+            <section id="contact_section" className="contact_section">
                 <div className="container">
 
                     <h2 className = "contact_title">Get In Touch.</h2>

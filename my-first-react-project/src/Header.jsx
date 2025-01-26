@@ -73,7 +73,7 @@ function Header() {
                         <li><a href="#hero_section">Home</a></li>
                         <li><a href="#interests_section">About</a></li>
                         <li><a href="#projects_section">Projects</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#contact_section">Contact</a></li>
                     </ul>
                 </nav>
             </div>
